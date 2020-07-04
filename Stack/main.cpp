@@ -7,9 +7,23 @@
 //
 
 #include <iostream>
+#include "ArrayStack.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    ArrayStack s;
+    
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    
+    std::cout << s.peek() << " Peeked from stack\n";
+    std::cout << s.peek() << " Peeked from stack\n";
+    
+    std::cout << s.pop() << " Popped from stack\n";
+    
+    std::cout << s.peek() << " Peeked from stack\n";
+    
+    
     return 0;
 }

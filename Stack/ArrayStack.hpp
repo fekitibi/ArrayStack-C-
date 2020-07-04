@@ -9,6 +9,19 @@
 #ifndef ArrayStack_hpp
 #define ArrayStack_hpp
 
-#include <stdio.h>
+#define MAX 1000
+  
+class ArrayStack {
+private:
+    int top;
+    int a[MAX];
+  
+public:
+    ArrayStack();
+    bool push(int x);
+    int pop();
+    int peek();
+    bool isEmpty();
+};
 
 #endif /* ArrayStack_hpp */
